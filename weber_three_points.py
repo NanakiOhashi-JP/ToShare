@@ -77,9 +77,3 @@ for angle in angles:
 # グラフ表示
 plt.savefig('weber_point.png')
 plt.show()
-
-# 解析解と比較（このケースでは対称性から厳密解がわかる）
-exact_x = 5
-exact_y = 2 + math.sqrt(3)
-print(f"Exact solution: ({exact_x:.6f}, {exact_y:.6f})")
-print(f"Difference: ({weber_x-exact_x:.6f}, {weber_y-exact_y:.6f})")
