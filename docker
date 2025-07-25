@@ -1,0 +1,15 @@
+{
+	"name": "Ubuntu Dev Container",
+	"image": "ubuntu:latest",
+	"postCreateCommand": "apt update && apt install -y git curl gcc build-essential locales && apt install -y ghc ghc-prof ghc-doc cabal-install && locale-gen ja_JP.UTF-8 && update-locale LANG=ja_JP.UTF-8 LC_ALL=ja_JP.UTF-8 && ln -s /usr/bin/runghc-* /usr/bin/runghc",
+	"remoteUser": "root",
+	"features": {},
+	"mounts": [],
+	"settings": {
+		"terminal.integrated.defaultProfile.linux": "bash"
+	},
+	"containerEnv": {
+		"LANG": "ja_JP.UTF-8",
+		"LC_ALL": "ja_JP.UTF-8"
+	}
+}
